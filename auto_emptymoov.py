@@ -66,7 +66,7 @@ def ts_concat(all_path, output_filepath, res):
 
 for date, title in all_title:
     if '中国空间站首次太空授课' in title: continue
-    allFpath = sorted(glob(f'{gd}/{mydrive}/{room}/*{date}*{title}*flv'),  reverse= True)
+    allFpath = sorted(glob(f'{gd}/{mydrive}/{room}/*{date}*{title}*flv'),  reverse= False)
     all_res = check_res(allFpath)
     for res, file_list in all_res.items():
         output_filepath = f"{gd}/{mydrive}/{concat_room}/{title}_{room}_{date.replace('-','')}_{res}_ts.mp4"
