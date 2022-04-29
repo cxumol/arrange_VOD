@@ -12,7 +12,7 @@ gd ="./virltu"
 os.system(f"mkdir -p {gd}/{mydrive}/{concat_room}")
 
 all_title = []
-allFpath = sorted(glob(f'{gd}/{mydrive}/{room}/*flv'), reverse=True)
+allFpath = sorted(glob(f'{gd}/{mydrive}/{room}/*flv'), reverse=False)
 
 for i in allFpath:
     title = re.findall(r'\[(.+?) .+?\]\[.+?\]\[(.+?)\]', i)[0]
