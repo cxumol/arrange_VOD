@@ -6,8 +6,8 @@ from pathlib import Path
 from time import sleep
 
 mydrive = '哔哩哔哩'
-room = "VALSE_Webinar"
-concat_room = "_VALSE_Webinar"
+room = "集智俱乐部"
+concat_room = "_swarma"
 gd ="./virltu"
 os.system(f"mkdir -p {gd}/{mydrive}/{concat_room}")
 
